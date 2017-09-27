@@ -29,4 +29,5 @@ gulp.task('server', function() {
 gulp.task('default',['server'], function () {
 	gulp.watch('./src/sass/**/*.scss', ['workflow']);
   gulp.watch('*.html').on('change', reload);
+  gulp.watch('*.js').on('change', reload);
 });
